@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Genre";
+}
+@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/test.js")"></script>
+}
+<h2>Genre</h2>
+
+<div class="container">
+    
+   <div class="row">
+       
+       <div class="col-md-4">
+           <img src="~/Images/rock.jpg" id="rock" class="img-rounded" alt="rock" height="200" width="200" data-song="/mp3/MeditationMusic_5.mp3">
+          
+
+           
+       </div>
+       <div class="col-md-2">
+
+       </div>
+       <div class="col-md-4">
+           <img src="~/Images/country.png" class="img-rounded" alt="country" height="200" width="200" data-song="/mp3/rock.mp3">
+      
+      
+
+       </div>
+       </div>
+    <div class="row">
+
+
+        <div class="col-md-4">
+            <img src="~/Images/hiphop.png" class="img-rounded" alt="hiphop" height="200" width="200">
+
+
+
+        </div>
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-4">
+        <img src="~/Images/pop.png" class="img-rounded" alt="hiphop" height="200" width="200">
+
+
+            <audio id="player" controls="controls" src="">
+               
+                Your browser does not support the audio element.
+            </audio>
+
+    </div>
+       
+   </div>
+</div>

@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>LifeSong</h1>
+    <p class="lead">Choose to give the gift of a personalized song. In three easy steps you can get your song orderd.</p>
+    <!--<p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>-->
+    <p>@Html.ActionLink("Process", "Steps", "Store", "", "")</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2><img src="~/Images/number1.png" alt="First Step" height="75" width="75" />&nbsp;Choose Genre</h2>
+        <p>
+            Audition tracks from various genres for your song.
+        </p>
+        <p>
+            
+        @Html.ActionLink("Learn More", "Index", "Store")</p>
+       
+    </div>
+    <div class="col-md-4">
+        <h2><img src="~/Images/number2.png" alt="Second Step" height="75" width="75" />&nbsp;Choose Artist</h2>
+        <p>Select an artist to sing your song.</p>
+        <p>@Html.ActionLink("Learn More", "Artist", "Store")</p>
+    </div>
+    <div class="col-md-4">
+        <h2><img src="~/Images/number3.png" alt="Third Step" height="75" width="75" />&nbsp;Submit Story </h2>
+        <p>Send us your story and we will turn it into lyrics</p>
+        <p>@Html.ActionLink("Learn More", "Story", "Store")</p>
+    </div>
+</div>

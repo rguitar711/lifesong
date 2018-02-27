@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Story";
+}
+
+<h2>Story</h2>
+
+<div class="container">
+    <div class="row">
+
+        @using (Html.BeginForm("Story", "Store", FormMethod.Post))
+        {
+            @Html.TextArea("Description", null, new { @class = "form-control" })
+
+            
+            <input type="submit" name="btn_submit" id="btn_submit" value="Submit" />
+
+        }
+        </div>
+</div>
